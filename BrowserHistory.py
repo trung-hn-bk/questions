@@ -29,9 +29,11 @@ obj.visit("D")
 print(obj.back(1))  # E
 
 
-Notes for Edge Cases:
+Notes:
 - steps can be larger than history list
 - visit() clears up all the forward history.
+- can be implemented with stack + pointer or doubly linked list
+- simpler version: assume steps is always 1
 """
 
 

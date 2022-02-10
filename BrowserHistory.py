@@ -26,7 +26,7 @@ print(obj.back(1))  # B
 print(obj.back(1))  # A
 print(obj.forward(2))  # C
 obj.visit("D")
-print(obj.back(1))  # E
+print(obj.back(1))  # C
 
 
 Notes:

@@ -33,8 +33,8 @@ obj.visit("C")
 print(obj.back(1))  # B
 print(obj.back(1))  # A
 obj.visit("D")
-print(obj.foward(1))  # D
-print(obj.foward(1))  # D
+print(obj.forward(1))  # D
+print(obj.forward(1))  # D
 
 
 Notes:

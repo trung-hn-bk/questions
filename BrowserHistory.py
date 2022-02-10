@@ -5,28 +5,36 @@ get back in the history number of steps or move forward in the history number of
 
 Implement the BrowserHistory class:
 
-BrowserHistory(homepage) 
+BrowserHistory(str homepage) 
     Initializes the object with the homepage of the browser.
     
-void visit(url) 
+void visit(str url) 
     Visits url from the current page. 
     
-string back(steps) 
+string back(int steps) 
     Move "steps" back in history. Return the url after moving
     
-string forward(steps) 
+string forward(int steps) 
     Move "steps" forward in history. Return the url after moving
 
 
-Example:
+Example 1:
+obj = BrowserHistory("A")
+obj.visit("B")
+obj.visit("C")
+print(obj.back(2))  # A
+print(obj.forward(1))  # B
+
+
+Example 2:
 obj = BrowserHistory("A")
 obj.visit("B")
 obj.visit("C")
 print(obj.back(1))  # B
 print(obj.back(1))  # A
-print(obj.forward(2))  # C
 obj.visit("D")
-print(obj.back(1))  # C
+print(obj.foward(1))  # D
+print(obj.foward(1))  # D
 
 
 Notes:
